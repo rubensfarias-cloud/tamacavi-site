@@ -3,59 +3,55 @@
 //  ============================================================
 //  ➜ Este é o arquivo que VOCÊ edita para adicionar sistemas.
 //
+//  O site é dividido em COLUNAS, cada uma com um DROPDOWN
+//  (menu suspenso) que lista os sistemas daquela categoria.
+//
 //  COMO ADICIONAR UM NOVO SISTEMA:
-//  1. Copie um bloco entre "{" e "}," (incluindo as 2 vírgulas do final)
-//  2. Cole logo abaixo, na posição desejada
+//  1. Abra a coluna/categoria desejada (financeira, agropecuaria, futura)
+//  2. Copie um bloco entre "{" e "}," e cole dentro do array
 //  3. Altere os valores:
-//        nome          → Nome do sistema (aparece no card)
-//        descricao     → Pequena descrição
-//        url           → Endereço real onde o sistema roda
-//        icone         → Emoji de ícone (opcional)
-//        categoria     → Categoria: "internos" | "clientes" | "landing"
-//        destaque      → true para destacar em azul (só 1-2 por vez)
+//        nome      → Nome do sistema (aparece no dropdown)
+//        url       → Endereço real onde o sistema roda
 //  4. Salve o arquivo. O site atualiza automaticamente.
 //
 //  Para REMOVER: apague o bloco inteiro do sistema.
 //  ============================================================
 
 const SISTEMAS = {
-  // ── Sistemas internos (seus) ──────────────────────────────
-  internos: [
-    {
-      nome: "Controle Financeiro",
-      descricao: "Gestão de planejamento e controle financeiro.",
-      url: "https://planejamento-financeiro-q4lc.onrender.com/",
-      icone: "💰",
-      destaque: true
-    },
-    // {
-    //   nome: "Nome do Sistema",
-    //   descricao: "Descrição breve do que o sistema faz.",
-    //   url: "https://endereco-do-sistema.com",
-    //   icone: "📊",
-    //   destaque: true
-    // },
-  ],
+  // ── Coluna 1: Gestão Financeira ───────────────────────────
+  financeira: {
+    titulo: "Gestão Financeira",
+    sistemas: [
+      {
+        nome: "Controle Financeiro",
+        url: "https://planejamento-financeiro-q4lc.onrender.com/",
+      },
+      // {
+      //   nome: "Outro Sistema Financeiro",
+      //   url: "https://endereco-do-sistema.com",
+      // },
+    ],
+  },
 
-  // ── Sistemas para clientes ────────────────────────────────
-  clientes: [
-    // {
-    //   nome: "Sistema do Cliente",
-    //   descricao: "Descrição do sistema.",
-    //   url: "https://endereco-do-sistema.com",
-    //   icone: "💼",
-    //   destaque: false
-    // },
-  ],
+  // ── Coluna 2: Sistema de Gestão Agropecuária ─────────────
+  agropecuaria: {
+    titulo: "Sistema de Gestão Agropecuária",
+    sistemas: [
+      // {
+      //   nome: "Nome do Sistema Agro",
+      //   url: "https://endereco-do-sistema.com",
+      // },
+    ],
+  },
 
-  // ── Links para landing pages / sites ──────────────────────
-  landing: [
-    // {
-    //   nome: "Site Institucional",
-    //   descricao: "Nosso site principal.",
-    //   url: "https://meu-site.com",
-    //   icone: "🌐",
-    //   destaque: false
-    // },
-  ]
+  // ── Coluna 3: (futura categoria) ─────────────────────────
+  futura: {
+    titulo: "Próxima Categoria",
+    sistemas: [
+      // {
+      //   nome: "Nome do Sistema",
+      //   url: "https://endereco-do-sistema.com",
+      // },
+    ],
+  },
 };
