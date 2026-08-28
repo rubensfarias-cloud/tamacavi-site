@@ -24,7 +24,7 @@ const SISTEMAS = {
     {
       nome: "Controle Financeiro",
       descricao: "Gestão de planejamento e controle financeiro.",
-      url: "/financeiro",
+      url: "https://planejamento-financeiro-q4lc.onrender.com/",
       icone: "💰",
       destaque: true
     },
