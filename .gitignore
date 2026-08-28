@@ -3,7 +3,14 @@ preview.png
 preview.jpg
 preview.pdf
 
+# Capturas de tela locais (não fazem parte do site)
+Captura de tela de *.png
+
 # Arquivos temporários
 *.log
 .DS_Store
 Thumbs.db
+
+# Diretórios gerados por ferramentas
+.wrangler/
+node_modules/

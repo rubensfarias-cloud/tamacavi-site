@@ -1,1 +1,10 @@
 _worker.js
+.git/
+.wrangler/
+Captura de tela de *.png
+preview.png
+preview.jpg
+preview.pdf
+README.md
+wrangler.jsonc
+node_modules/
