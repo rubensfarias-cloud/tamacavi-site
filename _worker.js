@@ -143,5 +143,11 @@ function reescreverHTML(html, origemReal, novoOrigem, slug) {
   const realSemProto = origemReal.replace(/^https?:\/\//, "");
   const novoSemProto = novoOrigem.replace(/^https?:\/\//, "");
   resultado = resultado.split(realSemProto).join(novoSemProto + slug);
+
+  // Reescreve caminhos absolutos de recursos (assets, css, js, fontes) para incluir o slug,
+  // para que o navegador os peça no nosso domínio (ex: /financeiro/assets/x.js)
+  resultado = resultado.replace(/(src|href)=["'](\/assets\/|\/vite\.svg|\/\w+\.(css|js|png|jpg|svg|ico|woff2?))/g,
+    `$1="${slug}$2`);
+
   return resultado;
 }
