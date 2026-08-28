@@ -22,10 +22,10 @@ const SISTEMAS = {
   // ── Sistemas internos (seus) ──────────────────────────────
   internos: [
     {
-      nome: "Meu Primeiro Sistema",
-      descricao: "Substitua este texto pela descrição do seu sistema e ajuste a URL.",
-      url: "https://seu-sistema.up.railway.app",
-      icone: "📊",
+      nome: "Controle Financeiro",
+      descricao: "Gestão de planejamento e controle financeiro.",
+      url: "https://planejamento-financeiro-q4lc.onrender.com/",
+      icone: "💰",
       destaque: true
     },
     // {
